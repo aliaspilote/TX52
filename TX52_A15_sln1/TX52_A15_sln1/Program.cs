@@ -18,6 +18,7 @@ namespace TX52_A15_sln1
         {
             Console.WriteLine("Pour GitHub4");
             Console.WriteLine("Pour GitHub5");
+            Console.WriteLine("Pour GitHub6");
 
         }
     }
