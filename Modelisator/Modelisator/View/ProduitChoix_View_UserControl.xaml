@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Modelisator.View.ProduitChoix_View_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:Modelisator.Forms.View"
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid  HorizontalAlignment="Left"  MinWidth="75"  >
+        <Label Name="m_labelListeProduit" Content="Boite à objets" Margin="10,0,0,0"></Label>
+        <ContentControl>
+             <ItemsControl Name="m_ProduitChoix_ItemsControl" BorderBrush="DeepSkyBlue" BorderThickness="1" Margin="0,25,0,0">
+
+                <!-- ItemsPanelTemplate -->
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="2" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <!-- ItemTemplate -->
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                        <Button Click="ButtonBase_OnClick" Margin="3" Content="{Binding }" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+        </ContentControl>
+    </Grid>
+</UserControl>
