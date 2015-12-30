@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Artefact.cs" />
+    <Compile Include="Model\Comportement.cs" />
+    <Compile Include="Model\DP.cs" />
+    <Compile Include="Model\Rule.cs" />
+    <Compile Include="Model\Sollicitation.cs" />
+    <Compile Include="Model\Values.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
