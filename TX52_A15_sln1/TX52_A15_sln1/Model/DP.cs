@@ -55,7 +55,10 @@ namespace TX52_A15_sln1.Model
             OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
         }
 
-
+        public bool status()
+        {
+            return false;
+        }
 
         public Values Values
         {

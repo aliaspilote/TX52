@@ -36,5 +36,10 @@ namespace TX52_A15_sln1.Model
                 label = value;
             }
         }
+
+        public bool Appliquer(EventArgs e)
+        {
+            return false;
+        }
     }
 }
